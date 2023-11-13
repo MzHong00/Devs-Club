@@ -6,30 +6,32 @@ export default function StarShine({id}) {
         const animationName = `shine`;
         const animationDuration = `${30 + Math.random() * 20}s`;
         const animationTimingFunction = `linear`;
-        const animationDelay = `${1 + Math.random() * 2}s`;
+        const animationDelay = `${1 + Math.random() * 30}s`;
 
         const styleSheet = document.styleSheets[0];
         styleSheet.insertRule(`
         @keyframes ${animationName} {
             0% {
-                transform: translateX(90vw)
+                transform: translateX(100vw)
             }
         }`);
 
-        const star = document.getElementById('1');
-        star.style.animation = `${animationName} 1s ${animationTimingFunction}`
+        const star = document.getElementById(`${id}`);
+        star.style.animation = `${animationName} ${animationDuration} ${animationTimingFunction} ${animationDelay} infinite`
 
         return () => {
             console.log("Clean!")
         }
-    }, []);
+    }, [id]);
 
     const starStyle = {
         position: 'absolute',
         width: 10 + Math.floor(Math.random() * 20),
-        opacity: Math.random(),
         top: `${Math.random() * 99}vh`,
         left: -50,
+        userDrag: "none",
+        userSelect: "none",
+        opacity: Math.random() * 0.9,
     }
 
     return (

@@ -1,6 +1,7 @@
 import styles from "./style/component.module.css";
 import "./style/intro.css";
 import StarShine from "./starShine";
+import IntroMonitor from "./introMonitor";
 
 export default function Intro() {
 
@@ -15,9 +16,10 @@ export default function Intro() {
     return (
         <div className={`introContainer ${styles.darkBackground}`}>
             <div className={styles.backdropFilter}>
-                <div className="introMonitor">
-                    {stars()} {/* Call the stars function to render the StarShine components */}
-                </div>
+                <IntroMonitor></IntroMonitor>
+            </div>
+            <div className="starShine">
+                {stars().map(component => component)}
             </div>
         </div>
     );
