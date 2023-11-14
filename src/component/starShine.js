@@ -2,7 +2,18 @@ import img from "../img/star.png"
 import { useEffect } from "react"
 
 export default function StarShine({id}) {
+
+    const starStyle = {
+        position: 'absolute',
+        width: 10 + Math.floor(Math.random() * 20),
+        top: `${Math.random() * 99}vh`,
+        left: -30,
+        userSelect: "none",
+        opacity: Math.random() * 0.9,
+    }
+
     useEffect(() => {
+        
         const animationName = `shine`;
         const animationDuration = `${20 + Math.random() * 20}s`;
         const animationTimingFunction = `linear`;
@@ -12,9 +23,9 @@ export default function StarShine({id}) {
         styleSheet.insertRule(`
         @keyframes ${animationName} {
             0% {
-                transform: translateX(100vw)
+                transform: translateX(100vw);
             }
-        }`);
+         }`);
 
         const star = document.getElementById(`${id}`);
         star.style.animation = `${animationName} ${animationDuration} ${animationTimingFunction} ${animationDelay} infinite`
@@ -23,15 +34,6 @@ export default function StarShine({id}) {
             console.log("Clean!")
         }
     }, [id]);
-
-    const starStyle = {
-        position: 'absolute',
-        width: 10 + Math.floor(Math.random() * 20),
-        top: `${Math.random() * 99}vh`,
-        left: -100,
-        userSelect: "none",
-        opacity: Math.random() * 0.9,
-    }
 
     return (
         <img id={id} style={starStyle} src={img} alt="1" />

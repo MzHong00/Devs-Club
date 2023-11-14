@@ -17,11 +17,7 @@ export default function IntroMonitor() {
 
                 </div>
                 <div className="searchFrame">
-                    <div className="searchButton">
-                        <span>
-                            Introduce
-                        </span>
-                    </div>
+                    <div className="searchButton"></div>
                 </div>
             </div>
         </div>
