@@ -1,12 +1,12 @@
-import img from "./style/star.png"
+import img from "../img/star.png"
 import { useEffect } from "react"
 
 export default function StarShine({id}) {
     useEffect(() => {
         const animationName = `shine`;
-        const animationDuration = `${30 + Math.random() * 20}s`;
+        const animationDuration = `${20 + Math.random() * 20}s`;
         const animationTimingFunction = `linear`;
-        const animationDelay = `${1 + Math.random() * 30}s`;
+        const animationDelay = `${Math.random() * 30}s`;
 
         const styleSheet = document.styleSheets[0];
         styleSheet.insertRule(`
@@ -28,8 +28,7 @@ export default function StarShine({id}) {
         position: 'absolute',
         width: 10 + Math.floor(Math.random() * 20),
         top: `${Math.random() * 99}vh`,
-        left: -50,
-        userDrag: "none",
+        left: -100,
         userSelect: "none",
         opacity: Math.random() * 0.9,
     }

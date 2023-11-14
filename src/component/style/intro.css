@@ -54,14 +54,17 @@
 }
 
 .searchButton {
-    position: relative;
-    top: 70%;
-    left: 40%;
-    color: whitesmoke;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 3em;
+
     color: rgb(189 183 255);
-    padding: 1em;
-    padding-inline: 15%;
-    border: 1px solid;
     border-radius: 10px;
+    border: 1px solid;
+
+    user-select: none;
+    text-decoration: none;
 }

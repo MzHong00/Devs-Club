@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function IntroMonitor() {
 
@@ -17,7 +17,11 @@ export default function IntroMonitor() {
 
                 </div>
                 <div className="searchFrame">
-                    <Link className="searchButton">Introduce</Link>
+                    <div className="searchButton">
+                        <span>
+                            Introduce
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
