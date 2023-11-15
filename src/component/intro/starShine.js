@@ -1,4 +1,4 @@
-import img from "../img/star.png"
+import img from "../../img/star.png"
 import { useEffect } from "react"
 
 export default function StarShine({id}) {
