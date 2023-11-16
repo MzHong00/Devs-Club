@@ -1,5 +1,39 @@
 {
     "club_name": "DEVS",
     "introduce": "우송대학교 IT 융합학부 동아리",
-    "nav_menu": []
+    "intro_nav": [
+        {
+            "id": 1,
+            "name": "소개"
+        },
+        {
+            "id": 2,
+            "name": "활동"
+        },
+        {
+            "id": 3,
+            "name": "구성원"
+        },
+        {
+            "id": 4,
+            "name": "가입하기"
+        }
+    ],
+    "other_menu": [
+        {
+            "list_name":"Login",
+            "img_src": "/image/user.png",
+            "url": ""
+        },
+        {
+            "list_name":"Activity",
+            "img_src": "/image/activity.png",
+            "url": ""
+        },
+        {
+            "list_name":"Minutes",
+            "img_src": "/image/minutes.png",
+            "url": ""
+        }
+    ]
 }

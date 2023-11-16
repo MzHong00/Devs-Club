@@ -27,15 +27,12 @@ export default function StarShine({id}) {
             }
          }`);
 
-        const star = document.getElementById(`${id}`);
+        const star = document.getElementById(`star${id}`);
         star.style.animation = `${animationName} ${animationDuration} ${animationTimingFunction} ${animationDelay} infinite`
 
-        return () => {
-            console.log("Clean!")
-        }
     }, [id]);
 
     return (
-        <img id={id} style={starStyle} src={img} alt="1" />
+        <img id={`star${id}`} style={starStyle} src={img} alt="1" />
     )
 }

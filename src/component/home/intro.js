@@ -1,5 +1,5 @@
 import styles from "./component.module.css";
-import "./intro.css";
+import "./home.css";
 import StarShine from "./starShine";
 import IntroMonitor from "./introMonitor";
 

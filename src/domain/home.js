@@ -1,4 +1,4 @@
-import Intro from "../component/intro/intro"
+import Intro from "../component/home/intro"
 
 export default function Home() {
 
