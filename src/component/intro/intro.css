@@ -1,8 +1,22 @@
+:root {
+    --main--color: rgb(189 183 255);
+}
+
 .introContainer {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+}
+
+
+@keyframes outMonitor {
+    0% {
+        transform: skew(1deg);
+    }
+    100% {
+        transform: skew(10deg) scale(0) translate(-100%, -100%);
+    }
 }
 
 .introMonitor {
@@ -15,11 +29,19 @@
     background-color: rgb(255, 255, 255, 0.1);
     overflow: hidden;
 }
+.introMonitor:active {
+    animation: outMonitor 2s ease forwards;
+    animation-fill-mode: forwards;
+}
+
+.introMainFrame {
+    width: 50%;
+    height: 100%;
+}
 
 .introText {
     display: flex;
     flex-direction: column;
-    width: 50%;
     height: 50%;
     margin-left: 5%;
     justify-content: center;
@@ -41,6 +63,8 @@
 .introSubFrame {
     width: 50%;
     height: 100%;
+
+    padding: 1em;
     background-color: black;
 }
 
@@ -50,15 +74,17 @@
 }
 
 .searchFrame {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
     width: 100%;
     height: 50%;
 }
 
 .searchButton {
     position: relative;
-    top: 70%;
-    left: 30%;
-    width: 50%;
+    width: 70%;
     height: 3em;
 
     background-color: white;
@@ -79,7 +105,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.2em;
-    color: rgb(189 183 255);
+    color: var(--main--color);
 
     top: 0;
     left: 0;
@@ -88,7 +114,7 @@
     background-color: black;
     border-radius: 10px;
     z-index: 1;
-    transform: scale(0.99, 0.95);
+    transform: scale(0.985, 0.95);
 }
 
 .searchButton::after {
@@ -98,7 +124,7 @@
     width: 100%;
     height: 110%;
     content: "";
-    background-color: rgb(189 183 255);
+    background-color: var(--main--color);
     z-index: 0;
     transition: all 0.3s ease;
 }
