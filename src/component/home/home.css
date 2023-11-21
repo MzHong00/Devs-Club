@@ -199,8 +199,8 @@
 
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
-    content: "Introduce";
+    font-size: 1em;
+    content: "동아리 신청하기";
 
     border-radius: 10px;
     z-index: 1;

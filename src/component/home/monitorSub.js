@@ -1,29 +1,32 @@
+import { useState } from "react";
+import ClubNews from "./clubNews";
 import IntroLogo from "./introLogo";
 
-export default function MonitorSub({ section }) {
+export default function MonitorSub({ section, handleSection }) {
+    const [frameWidth, setFrameWidth] = useState(50);
+
+    const focusFrame = () => {
+        setFrameWidth(60);
+    }
+
     const subSectionHandler = () => {
-    console.log(section)
 
         switch (section) {
             case "1":
-                break;
+                return <ClubNews onClick={handleSection}/>
             case "2":
                 break;
             case "3":
                 break;
             case "4":
-                return <IntroLogo></IntroLogo>
+                return 
             default:
-                return (
-                    <div className="searchFrame">
-                        <div className="searchButton"></div>
-                    </div>
-                )
+                return <IntroLogo></IntroLogo>
         }
     }
 
     return (
-        <div className="introSubFrame">
+        <div className="introSubFrame" style={{width: `${frameWidth}%`}}>
             {subSectionHandler()}
         </div>
     )

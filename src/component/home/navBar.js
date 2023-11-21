@@ -1,7 +1,6 @@
 import homeJson from "../../constant/home.json"
 
 export default function NavBar(props) {
-
     return (
         <nav className="navBar">
             {

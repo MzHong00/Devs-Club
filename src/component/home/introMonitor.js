@@ -5,18 +5,17 @@ import MonitorSub from "./monitorSub"
 import NavBar from "./navBar"
 
 export default function IntroMonitor() {
-    const [introSection, setIntroSection] = useState(0);
-
+    const [introSection, setIntroSection] = useState("1");
     const changeSection = (e) => {
         setIntroSection(e.target.id);
     }
 
     return (
         <div className="introMonitor">
-            <MonitorMain section={introSection}></MonitorMain>
-            <MonitorSub section={introSection}></MonitorSub>
-            <NavBar onClick={changeSection}></NavBar>
-            <Menubar></Menubar>
+            <MonitorMain section={introSection} />
+            <MonitorSub section={introSection} handleSection={changeSection} />
+            <NavBar onClick={changeSection} />
+            <Menubar />
         </div>
     )
 }

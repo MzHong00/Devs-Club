@@ -4,19 +4,19 @@
     "intro_nav": [
         {
             "id": 1,
-            "name": "소개"
+            "name": "홈"
         },
         {
             "id": 2,
-            "name": "활동"
+            "name": "소개"
         },
         {
             "id": 3,
-            "name": "구성원"
+            "name": "활동"
         },
         {
             "id": 4,
-            "name": "가입하기"
+            "name": "구성원"
         }
     ],
     "other_menu": [
