@@ -9,22 +9,6 @@
     overflow: hidden;
 }
 
-@keyframes outMonitor {
-    0% {
-        transform: skew(1deg);
-    }
-
-    100% {
-        transform: skew(10deg) scale(0) translate(-100%, -100%);
-    }
-}
-
-/* .introMonitor:active {
-    animation: outMonitor 2s ease forwards;
-    animation-fill-mode: forwards;
-} */
-
-
 
 /* MenuBar */
 .menuBar {
@@ -43,7 +27,7 @@
     width: 60%;
     height: fit-content;
     padding: 1em;
-    
+
     background-color: rgb(189, 183, 255, 0.4);
     border-radius: 10px;
 
@@ -70,7 +54,7 @@
 .navBar {
     position: absolute;
     width: 20em;
-    bottom:  1em;
+    bottom: 1em;
     left: 1em;
 
     opacity: 0.9;
@@ -78,7 +62,7 @@
 
 .navBarContent {
     width: 100%;
-    background: rgb(0,0,0,0.1);
+    background: rgb(0, 0, 0, 0.1);
     color: darkgrey;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -88,7 +72,7 @@
 }
 
 .navBarContent:hover {
-    background: rgb(0,0,0,0.05);
+    background: rgba(255, 255, 255, 0.05);
     cursor: pointer;
 }
 
@@ -99,7 +83,7 @@
     flex-direction: row;
     width: 70%;
     height: 70%;
-    
+
     border: 5px solid black;
     border-radius: 30px;
     background-color: rgb(255, 255, 255, 0.1);
@@ -111,7 +95,6 @@
 .introMainFrame {
     width: 50%;
     height: 100%;
-    padding: 2em;
 }
 
 .introText {
@@ -142,12 +125,9 @@
     gap: 10px;
 }
 
-.clubForm label {
+.clubForm label {}
 
-}
-
-.clubForm label input {
-}
+.clubForm label input {}
 
 
 

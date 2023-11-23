@@ -1,7 +1,7 @@
 import IntroLogo from "./introLogo";
 import ClubSingup from "./clubSignup";
 
-export default function MonitorMain({ section }) {
+export default function MonitorMain({ section, width }) {
 
     const mainSectionHandler = () => {
         switch (section) {
@@ -10,7 +10,7 @@ export default function MonitorMain({ section }) {
             case "2":
                 break;
             case "3":
-                break;
+                return
             case "4":
                 return 
             default:
@@ -19,7 +19,7 @@ export default function MonitorMain({ section }) {
     }
 
     return (
-        <div className="introMainFrame">
+        <div className="introMainFrame" style={{width: `${width}%`}}>
             {mainSectionHandler()}
         </div>
     )

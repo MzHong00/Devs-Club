@@ -8,7 +8,7 @@ export default function ActivityCard() {
 
             </div>
             <div className="activitySummary">
-
+                
             </div>
             <div className="activityDetail">
 
