@@ -1,4 +1,4 @@
-import homeJson from "../../constant/home.json"
+import { homeJson } from "../../constant/homeData"
 
 export default function IntroLogo() {
 

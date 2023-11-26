@@ -5,13 +5,13 @@ export default function MonitorMain({ section, width }) {
 
     const mainSectionHandler = () => {
         switch (section) {
-            case "1":
+            case "홈":
                 return <IntroLogo></IntroLogo>
-            case "2":
+            case "소개":
                 break;
-            case "3":
+            case "활동":
                 return
-            case "4":
+            case "구성원":
                 return 
             default:
                 return <ClubSingup></ClubSingup>

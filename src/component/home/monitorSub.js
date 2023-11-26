@@ -2,26 +2,31 @@ import ClubNews from "./clubNews";
 import IntroLogo from "./introLogo";
 import Activity from "./activity";
 
-export default function MonitorSub({ section, width, onSectionChange }) {
+export default function MonitorSub({ section, width, handleSection }) {
 
     const subSectionHandler = () => {
 
         switch (section) {
-            case "1":
-                return <ClubNews onClick={onSectionChange}/>
-            case "2":
-                break;
-            case "3":
-                return <Activity />
-            case "4":
-                return 
+            case "홈":
+                return <ClubNews onClick={handleSection} />
+            case "소개":
+                return;
+            case "활동":
+                return (
+                    <>
+                        <IntroLogo />
+                        <Activity />
+                    </>
+                )
+            case "구성원":
+                return
             default:
                 return <IntroLogo></IntroLogo>
         }
     }
 
     return (
-        <div className="introSubFrame" style={{width: `${width}%`}}>
+        <div className="introSubFrame" style={{ width: `${width}%` }}>
             {subSectionHandler()}
         </div>
     )
