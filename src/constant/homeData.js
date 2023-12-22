@@ -14,11 +14,11 @@ export const homeJson = {
         },
         {
             "id": 3,
-            "name": "활동"
+            "name": "구성원"
         },
         {
             "id": 4,
-            "name": "구성원"
+            "name": "활동"
         }
     ],
     other_menu: [
@@ -55,7 +55,8 @@ export const homeJson = {
             "id": 3,
             iconImg: icon({ name: 'school' }),
             "summary": "교내 대회 및 행사 참가",
-            "detail": "창업 대회, 셀프 스터디 등 교내 활동에 적극 참여합니다. ※우송지수 부여 활동 참여가능! 단, 우송지수 활동만은 불가능합니다."
+            "detail": `창업 대회, 셀프 스터디 등 교내 활동에 적극 참여합니다. 
+            ※우송지수 부여 활동 참여가능! 단, 우송지수 활동만은 불가능합니다.`
         },
         {
             "id": 4,

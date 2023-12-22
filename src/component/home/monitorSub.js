@@ -1,6 +1,7 @@
 import ClubNews from "./clubNews";
 import IntroLogo from "./introLogo";
 import Activity from "./activity";
+import ClubSingup from "./clubSignup";
 
 export default function MonitorSub({ section, width, handleSection }) {
 
@@ -11,17 +12,19 @@ export default function MonitorSub({ section, width, handleSection }) {
                 return <ClubNews onClick={handleSection} />
             case "소개":
                 return;
+            case "구성원":
+                return
             case "활동":
                 return (
                     <>
-                        <IntroLogo />
+                        <IntroLogo summary="동아리 활동"/>
                         <Activity />
                     </>
                 )
-            case "구성원":
-                return
+            case "신청":
+                return <ClubSingup></ClubSingup>;
             default:
-                return <IntroLogo></IntroLogo>
+                return
         }
     }
 

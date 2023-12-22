@@ -1,5 +1,4 @@
 import IntroLogo from "./introLogo";
-import ClubSingup from "./clubSignup";
 
 export default function MonitorMain({ section, width }) {
 
@@ -9,17 +8,19 @@ export default function MonitorMain({ section, width }) {
                 return <IntroLogo></IntroLogo>
             case "소개":
                 break;
+            case "구성원":
+                return
             case "활동":
                 return
-            case "구성원":
-                return 
+            case "신청":
+                return <IntroLogo summary="동아리 가입신청"></IntroLogo>;
             default:
-                return <ClubSingup></ClubSingup>
+                return
         }
     }
 
     return (
-        <div className="introMainFrame" style={{width: `${width}%`}}>
+        <div className="introMainFrame" style={{ width: `${width}%` }}>
             {mainSectionHandler()}
         </div>
     )

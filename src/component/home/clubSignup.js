@@ -15,9 +15,9 @@ export default function ClubSingup() {
 
 
     return (
-        <>
+        <div className="singupFrame">
             <form method="post" className="clubForm">
-                <h1>동아리 가입신청</h1>
+                <h1>가입 신청서</h1>
                 <label>
                     이름
                     <input name="name" type="text"></input>
@@ -38,7 +38,8 @@ export default function ClubSingup() {
                     전화번호
                     <input name="student_num" type="tel" onChange={phoneNumInput} value={phoneNumber} maxLength="13"></input>
                 </label>
+                <input type="submit" value="제출"/>
             </form>
-        </>
+        </div>
     )
 }

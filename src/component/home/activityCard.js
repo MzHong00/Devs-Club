@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function ActivityCard({iconImg, summary, detail}) {
+export default function ActivityCard({id, iconImg, summary, detail}) {
 
     return (
-        <div className="activityCardContents">
+        <div className="activityCardContents" style={{animationDelay: `${id}s`}}>
             <div className="activityIcon">
-                <FontAwesomeIcon icon={iconImg} color='white' size='2x' />
+                <FontAwesomeIcon icon={iconImg} color='purple' size='2x' />
             </div>
             <div className="activitySummary">
                 {summary}
