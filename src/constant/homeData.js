@@ -1,8 +1,18 @@
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import devs from "../img/devs.png"
 
 export const homeJson = {
     club_name: "DEVS",
     introduce: "우송대학교 IT 융합학부 동아리",
+    userInfoTest: [
+        {
+            profilesImg: devs,
+            name: "홍정민",
+            studentNum: "19",
+            introduce: "Hello, i'm JeongMin",
+            major: "컴정"
+        }
+    ],
     intro_nav: [
         {
             "id": 1,

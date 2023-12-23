@@ -2,6 +2,7 @@ import ClubNews from "./clubNews";
 import IntroLogo from "./introLogo";
 import Activity from "./activity";
 import ClubSingup from "./clubSignup";
+import Member from "./member";
 
 export default function MonitorSub({ section, width, handleSection }) {
 
@@ -13,7 +14,7 @@ export default function MonitorSub({ section, width, handleSection }) {
             case "소개":
                 return;
             case "구성원":
-                return
+                return <Member memberType="임원"></Member>
             case "활동":
                 return (
                     <>

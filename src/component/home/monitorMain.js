@@ -1,4 +1,5 @@
 import IntroLogo from "./introLogo";
+import Member from "./member";
 
 export default function MonitorMain({ section, width }) {
 
@@ -9,7 +10,7 @@ export default function MonitorMain({ section, width }) {
             case "소개":
                 break;
             case "구성원":
-                return
+                return <Member memberType="일반"></Member>
             case "활동":
                 return
             case "신청":
