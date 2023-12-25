@@ -13,6 +13,7 @@ export const homeJson = {
             major: "컴정"
         }
     ],
+    clubIntroDetail: `안녕하세요, DEVS 동아리 회장 X성X입니다. 저희 동아리는 ...입니다. 부담 없이 가입신청해 주세요`,
     intro_nav: [
         {
             "id": 1,

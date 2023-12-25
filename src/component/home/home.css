@@ -5,7 +5,9 @@
 @keyframes fadeInOut {
     from {
         opacity: 0;
-    } to {
+    }
+
+    to {
         opacity: 1;
     }
 }
@@ -13,7 +15,9 @@
 @keyframes showUp {
     from {
         transform: scale(0);
-    } to {
+    }
+
+    to {
         transform: scaleY(1);
     }
 }
@@ -143,14 +147,14 @@
     height: fit-content;
     padding: 10px;
     padding-block: 2em;
-    
+
     background-color: var(--main--color);
-    
+
     border-radius: 10px;
 
     opacity: 0.7;
     gap: 1.5em;
-    user-select: none;    
+    user-select: none;
 
     animation: showUp 1s ease backwards;
 }
@@ -198,7 +202,7 @@
 .clubForm {
     display: grid;
     padding-top: 2em;
-    
+
     color: var(--main--color);
     gap: 10px;
 }
@@ -273,11 +277,11 @@
 }
 
 /* Club member */
-.member{
+.member {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     width: 100%;
     height: 100%;
 
@@ -289,6 +293,8 @@
     font-size: 1.5em;
     font-weight: bold;
     color: rgb(255, 255, 255);
+
+    animation: fadeInOut 1s ease 0.7s backwards;
 }
 
 .memberList {
@@ -296,23 +302,27 @@
     width: 100%;
     height: 100%;
 
+    overflow-x: hidden;
     overflow-y: scroll;
 
     gap: 10px;
 }
 
 .memberList::-webkit-scrollbar {
-    width: 6px;  /* 스크롤바의 너비 */
+    width: 6px;
+    /* 스크롤바의 너비 */
 }
 
 .memberList::-webkit-scrollbar-thumb {
-    background-color: var(--main--color); /* 스크롤바의 색상 */
-    
+    background-color: var(--main--color);
+    /* 스크롤바의 색상 */
+
     border-radius: 10px;
 }
 
 .memberList::-webkit-scrollbar-track {
-    background-color: rgba(189, 183, 255, 0.322);  /*스크롤바 뒷 배경 색상*/
+    background-color: rgba(189, 183, 255, 0.322);
+    /*스크롤바 뒷 배경 색상*/
     border-radius: 10px;
 }
 
@@ -330,7 +340,7 @@
     color: white;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation: fadeInOut 1s ease-in 0.5s backwards;
+    animation: fadeInOut 0.5s ease-in 1.5s backwards;
 }
 
 .profilesImg {
@@ -347,4 +357,31 @@
 
 .studName {
     font-weight: bold;
+}
+
+.securityBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 1px 1px 7px gray inset;
+    border-radius: 10px;
+
+    color: white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInOut 0.5s ease-in 1.5s backwards;
+}
+
+/* ClubIntro 소개글 */
+.club-intro-box {
+    margin: 5%;
+}
+
+.club-intro-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -23,7 +23,7 @@ export default function ClubSingup() {
                     <input name="name" type="text"></input>
                 </label>
                 <label>
-                    나이
+                    전공
                     <input name="age" type="number"></input>
                 </label>
                 <label>
